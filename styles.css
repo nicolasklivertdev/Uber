@@ -1,0 +1,1405 @@
+* {
+    font-family: 'Uber Move Text', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7.52px;
+    padding: 0px 7.52px;
+    padding-bottom: 64px;
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 57px;
+    margin-bottom: 78px;
+}
+
+
+.nav-bar1, .nav-bar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.Uber {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.viajar, .dirigir, .empresa, .Sobre, .PT-BR, .ajuda, .fazer {
+    padding: 8px 14px;
+}
+
+.viajar:hover, .dirigir:hover, .empresa:hover, .Sobre:hover, .PT-BR:hover, .ajuda:hover, .fazer:hover {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(40, 40, 40);
+    transition-property: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.viajar:not(:hover), .dirigir:not(:hover), .empresa:not(:hover), .Sobre:not(:hover), .PT-BR:not(:hover), .ajuda:not(:hover), .fazer:not(:hover) {
+    border-radius: 20px;
+    transition-duration: 400ms;
+    background-color: transparent;
+}
+
+.viajar:focus, .dirigir:focus, .empresa:focus, .Sobre:focus, .PT-BR:focus, .ajuda:focus, .fazer:focus {
+    background-color: rgb(60, 60, 60);
+}
+
+.Sobre, .PT-BR {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cadastre-se {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+.cadastre-se:hover {
+    background-color: rgb(218, 218, 218);
+    transition-property: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.cadastre-se:not(:hover) {
+    transition-duration: 400ms;
+    background-color: white;
+}
+
+.cadastre-se:focus {
+    background-color: rgb(218, 218, 218)
+}
+
+.Menu, .menu {
+    display: none;
+}
+
+.nav-bar3 {
+    display: none;
+    padding: 16px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition-duration: 200ms;
+    background-color: white;
+}
+
+.nav-bar3 a {
+    margin-bottom: 12px;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.viagem {
+    margin-top: 70px;
+    margin-left: 57px;
+    max-width: 32.6%;
+    width: 100%;
+}
+
+.viagem h1 {
+    max-width: 100%;
+    font-size: 50px;
+}
+
+.viagem p {
+    font-size: 17px;
+}
+
+.local, .destiny {
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    max-height: 7.7%;
+    height: 100%;
+    background-color: white;
+    color: black;
+}
+
+.local {
+    margin-bottom: 12px;
+}
+
+.destiny {
+    margin-bottom: 28px;
+}
+
+.svg1, .svg2 {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+input {
+    display: flex;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    max-width: 82%;
+    width: 100%;
+}
+
+.img, .img2 {
+    margin-right: 15px;
+    width: 16px;
+    height: 16px;
+}
+
+.img:hover, .img2:hover {
+    cursor: pointer;
+}
+
+#Local:not(:placeholder-shown) + .img {
+    width: 16px;
+    height: 16px;
+    background-image: url(x.png);
+    opacity: 1;
+}
+
+#Local:placeholder-shown + .img {
+    background-image: url(enviar.png);
+    opacity: 1;
+}
+
+#destiny:not(:placeholder-shown) + .img2 {
+    width: 16px;
+    height: 16px;
+    background-image: url(x.png);
+}
+
+.line {
+    margin: -20px 0px ;
+    margin-left: 19.4px;
+    border-left: 1px solid white;
+    max-height: 7%;
+    height: 100%;
+}
+
+.sub-header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sub-header-btn:hover {
+    cursor: pointer;
+}
+
+.subimg {
+    margin-left: 171px;
+}
+
+.S1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 128px;
+    padding-top: 64px;
+}
+
+.Sec1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: -7px;
+    max-width: 37%;
+    width: 100%;
+}
+
+.Sec1 h1 {
+    margin-bottom: 18px;
+    line-height: 4rem;
+    font-size: 50.49px;
+}
+
+.Sec1 p {
+    margin-bottom: 35px;
+    font-size: 16.5px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Sec1-login {
+    display: flex;
+    align-items: center;
+}
+
+.Sec1-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13.5px 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.Sec1-btn:hover {
+    cursor: pointer;
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: rgb(58, 58, 58);
+}
+
+.Sec1-btn:not(:hover) {
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: rgb(0, 0, 0);
+}
+
+.Sec1-btn:focus {
+    transition: background;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: rgb(75, 75, 75);
+}
+
+.Sec1-login a {
+    margin-left: 25px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #CBCBCB;
+    position: relative;
+    transition: border-color 0.3s ease;
+    font-size: 17px;
+    color: black;
+}
+
+.Sec1-login a::after {
+    margin-bottom: -1px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #000;
+    transition: width 0.4s ease;
+}
+
+.Sec1-login a:hover::after {
+    border-bottom-color: black;
+    width: 100%;
+}
+
+.S1 img {
+    margin-right: 125px;
+}
+
+.S2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.Sec-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8.1rem;
+    margin-bottom: 4rem;
+    margin-left: 55px;
+    max-width: 90%;
+    width: 100%;
+}
+
+.Sec2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Sec2 h1 {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    line-height: 4rem;
+    font-size: 50px;
+    color: #333333;
+}
+
+.Sec2 p {
+    margin-bottom: 36px;
+    font-size: 16.5px;
+    color: #333333;
+}
+
+.Sec2-soluctions {
+    display: flex;
+    align-items: center;
+}
+
+.Sec2-btn {
+    display: flex;
+    align-items: center;
+    padding: 13.5px 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.Sec2-btn:hover {
+    cursor: pointer;
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: rgb(58, 58, 58);
+}
+
+.Sec2-btn:not(:hover) {
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: black;
+}
+
+.Sec2-btn:focus {
+    transition: background;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: rgb(75, 75, 75);
+}
+
+.Sec2-soluctions a {
+    margin-left: 25px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #CBCBCB;
+    position: relative;
+    transition: border-color 0.3s ease;
+    font-size: 17px;
+    color: black;
+}
+
+.Sec2-soluctions a::after {
+    margin-bottom: -1px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.Sec2-soluctions a:hover::after {
+    border-bottom-color: black;
+    width: 100%;
+}
+
+.Sec21 {
+    display: flex;
+    margin-right: -10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Uber-app {
+    display: flex;
+    flex-direction: column;
+    margin: auto -8px;
+    padding: 0px 64px;
+    padding-top: 1.8rem;
+    background-color: #F6F6F6;
+}
+
+.Uber-app h1 {
+    margin-bottom: 2.3rem;
+    font-size: 36px;
+}
+
+.QRcodes {
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.QRcode1, .QRcode2 {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.QRcode1:hover, .QRcode2:hover {
+    cursor: pointer;
+}
+
+.QRimg, .QRimg2 {
+    margin: 24px 0px;
+    margin-left: 24px;
+    max-width: 28.4%;
+    width: 100%;
+}
+
+.QRcode1img, .QRcode2img {
+    display: none;
+}
+
+.QRcode-1, .QRcode-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24px;
+    line-height: 0.001px;
+    font-size: 17px;
+}
+
+.QRcode-1 h2, .QRcode-2 h2 {
+    margin-bottom: 0.78rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px -7.6px;
+    margin-bottom: -7.96px;
+    padding: 0px 62px;
+    padding-bottom: 65px;
+    background-color: black;
+    color: white;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.9rem;
+    margin-bottom: 1rem;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 2.7rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.footeruber {
+    font-size: 23px;
+}
+
+.help {
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    max-width: 26.16%;
+    width: 100%;
+}
+
+.help:hover {
+    border-bottom: 1px solid white;
+}
+
+.ubertech {
+    display: flex;
+    text-align: right;
+    font-size: 14.5px;
+    max-width: 31%;
+    width: 100%;
+}
+
+.ubertech:hover {
+    color: #b4b4b4;
+}
+
+.footer2 {
+    display: flex;
+    margin-bottom: -1rem;
+    gap: 2rem;
+}
+
+.footer21, .footer22 {
+    display: flex;
+    gap: 2rem;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.column1, .column2, .column3, .column4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.column1 a, .column2 a, .column3 a, .column4 a {
+    font-size: 14.5px;
+}
+
+.column1 a:hover, .column2 a:hover, .column3 a:hover, .column4 a:hover {
+    color: #b4b4b4;
+}
+
+.column1 h3, .column2 h3, .column3 h3, .column4 h3 {
+    margin-bottom: 0.3rem;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.9rem;
+    margin-left: -10px;
+}
+
+.social {
+    display: flex;
+    gap: 3.7rem;
+    max-width: 49%;
+    width: 100%;
+}
+
+.social button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    max-width: 8.5%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+}
+
+.social button:hover {
+    cursor: pointer;
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: #303030;
+}
+
+.social button:not(:hover) {
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: black;
+}
+
+.social button:focus {
+    background-color: #474747;
+}
+
+.buttonsvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.idioma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    gap: 0rem;
+}
+
+.idioma button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 11.5px;
+    border: none;
+    border-radius: 8px;
+    gap: 0.5rem;
+    font-size: 14.5px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.idioma button:hover {
+    cursor: pointer;
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: #303030;
+}
+
+.idioma button:not(:hover) {
+    transition: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-color: black;
+}
+
+.footer-31 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -0.55rem;
+    margin-bottom: 3rem;
+    margin-left: 0.35rem;
+    gap: 0.5rem;
+    max-width: 11.5%;
+    width: 100%;
+}
+
+.footer-31 img {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.footer-31 img:hover {
+    cursor: pointer;
+}
+
+.footer-32 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    max-width: 100%;
+    width: 100%;
+    color: rgb(161, 161, 161);
+}
+
+.footer-32 p {
+    margin-top: 8px;
+    max-width: 100%;
+    width: 100%;
+    color: rgb(161, 161, 161);
+}
+
+.terms {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    max-width: 83.5%;
+    width: 100%;
+}
+
+.terms a {
+    color: rgb(161, 161, 161);
+}
+
+.terms a:hover {
+    color: #414141;
+}
+
+a {
+    color: white;
+}
+
+a:focus {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1135px) {
+    header {
+        padding-bottom: 2rem;
+    }
+
+    nav {
+        margin: 14px 15px;
+        margin-right: 2px;
+        margin-bottom: 78px;
+    }
+    
+    .nav-bar2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 4px;
+        gap: 0.3rem;
+        font-size: 14.5px;
+        font-weight: 500;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .Uber {
+        margin-top: -5px;
+        font-size: 20px;
+    }
+    
+    .viajar, .dirigir, .empresa, .Sobre, .PT-BR, .ajuda {
+        display: none;
+    }
+
+    .Menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 100px;
+        max-width: 2.25rem;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+    }
+
+    .Menu:hover {
+        cursor: pointer;
+        transition: background;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        background-color: rgb(35, 35, 35);
+    }
+
+    .Menu:not(:hover) {
+        transition: background;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        background-color: rgb(0, 0, 0);
+    }
+
+    .Menu + .nav-bar3 {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .Menu:focus + .nav-bar3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-top: 14px;
+        padding-bottom: 150px;
+        line-height: 60px;
+        max-width: 97%;
+        width: 100%;
+        z-index: 2;
+        background-color: white;
+        color: black;
+    }
+
+    .nav-bar3 a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: -12px;
+        margin-bottom: 24px;
+        margin-left: 0.5rem;
+        font-weight: 700;
+        color: black;
+    }
+
+    .Viajar, .Dirigir, .Empresa, .sobre, .Ajuda {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        font-size: 32px;
+    }
+
+    .Viajar:hover, .Dirigir:hover, .Empresa:hover, .Ajuda:hover {
+        color: #414141;
+    }
+
+    .sobre {
+        display: flex;
+        align-items: center;
+        gap: 59.5rem;
+    }
+
+    .pt-br {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    .menu {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sub-header {
+        flex-direction: column;
+    }
+
+    .viagem {
+        margin-top: -44px;
+        margin-left: 25px;
+        max-width: 95%;
+        width: 100%;
+    }
+
+    .viagem h1 {
+        margin-bottom: 21px;
+        font-size: 44px;
+        line-height: 3.51rem;
+        max-width: 86.46%;
+        width: 100%;
+    }
+    
+    .viagem p {
+        margin-bottom: 18px;
+    }
+
+    .local, .destiny {
+        border-radius: 9px;
+        max-width: 100%;
+        width: 24.68rem;
+    }
+    
+    input {
+        height: 2.9rem;
+    }
+
+    .local {
+        margin-bottom: 30px;
+    }
+      
+    .line {
+        margin: -33px 0px ;
+        margin-left: 19.4px;
+        border-left: 1px solid white;
+        height: 3rem;
+        z-index: 2;
+    }
+    
+    .sub-header-btn {
+        margin-bottom: 0.75rem;
+    }
+
+    .subimg {
+        margin: 24px;
+    }
+
+    .S1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 128px;
+    }
+
+    .Sec1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: -42px;
+        margin-left: 1.5rem;
+        max-width: 89.5%;
+        width: 100%;
+    }
+    
+    .Sec1 h1 {
+        margin-bottom: 0.55rem;
+        line-height: 3.15rem;
+        font-size: 42px;
+        max-width: 90.76%;
+    }
+    
+    .Sec1 p {
+        margin-bottom: 33px;
+        line-height: 1.5rem;
+        font-size: 16.5px;
+        letter-spacing: -0.3px;
+        max-width: 91.29%;
+        width: 100%;
+    }
+
+    .S1 img {
+        margin: 24px;
+        margin-top: 36px;
+    }
+
+    .S2 {
+        margin-bottom: 4rem;
+    }
+    
+    .Sec-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.1rem;
+        margin-bottom: 4rem;
+        margin-left: 1.5rem;
+        max-width: 95.6%;
+        width: 100%;
+    }
+    
+    .Sec2 h1 {
+        margin-top: -40px;
+        margin-bottom: 9px;
+        line-height: 3.2rem;
+        font-size: 42px;
+        max-width: 80.1%;
+        width: 100%;
+    }
+    
+    .Sec2 p {
+        margin-bottom: 33px;
+        line-height: 1.5rem;
+        font-size: 16.5px;
+        max-width: 77.39%;
+        width: 100%;
+    }
+
+    .Sec2-btn {
+        padding: 13.5px 26.5px;
+    }
+
+    .Sec21 {
+        margin-top: 2px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .Sec21img {
+        margin-right: 20px;
+        margin-bottom: 12px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .Uber-app {
+        padding: 0px 7.52px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .uberapp {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        max-width: 100%;
+    }
+
+    .Uber-app h1 {
+        margin-left: 0rem;
+        margin-bottom: 2.3rem;
+        font-size: 32px;
+    }
+    
+    .QRcodes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .QRcode1, .QRcode2 {
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid rgb(223, 223, 223);
+        max-width: 97.6%;
+        width: 100%;
+    }
+
+    .QRimg, .QRimg2 {
+        display: none;
+    }
+
+    .QRcode1img, .QRcode2img {
+        display: flex;
+        margin: 16px 0px;
+        margin-right: -8px;
+        margin-left: 16px;
+        max-width: 5.3rem;
+        width: 100%;
+    }
+    
+    .QRcode-1, .QRcode-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -8px;
+        margin-left: 24px;
+        line-height: 0.001px;
+        font-size: 16px;
+    }
+    
+    .QRcode-1 p, .QRcode-2 p {
+        display: none;
+    }
+
+    footer {
+        margin: 0px -7.6px;
+        padding: 0px 30px;
+    }
+    
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+        gap: 2.7rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .footeruber {
+        font-size: 20px;
+    }
+    
+    .help {
+        margin-bottom: 2rem;
+        padding-bottom: 0.1rem;
+        max-width: 198px;
+        width: 100%;
+    }
+
+    .ubertech {
+        margin-bottom: 1rem;
+        text-align: left;
+        max-width: 49.99%;
+        width: 100%;
+    }
+
+    .footer2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        gap: 0rem;
+    }
+
+    .column1, .column2, .column3, .column4 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        max-width: 36%;
+        width: 100%;
+    }
+    
+    .column1 a, .column2 a, .column3 a, .column4 a {
+        font-size: 14.5px;
+    }
+
+    .footer-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 3.9rem;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3.15rem;
+        gap: 1rem;
+        max-width: 63%;
+        width: 100%;
+    }
+    
+    .social button {
+        max-width: 2.85rem;
+        width: 100%;
+    }
+
+    .idioma {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-31 {
+        margin-top: -1.37rem;
+        max-width: 8rem;
+        width: 100%;
+    }
+    
+    .footer-32 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+    }
+    
+    .footer-32 p {
+        margin-top: 8px;
+        max-width: 100%;
+        width: 100%;
+        color: rgb(161, 161, 161);
+    }
+    
+    .terms {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.85rem;
+        gap: 0.005rem;
+        max-width: 30%;
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 599px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding-bottom: 1.95rem;
+    }
+
+    .viagem {
+        margin-top: -52px;
+        margin-left: 16px;
+        max-width: 95%;
+        width: 100%;
+    }
+
+    .viagem h1 {
+        margin-bottom: 22px;
+        font-size: 36px;
+        line-height: 2.75rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .local, .destiny {
+        max-width: 99.2%;
+        width: 100%;
+    }
+    
+    input {
+        max-width: 84%;
+        width: 100%;
+    }
+
+    .img, .img2 {
+        margin: auto 0px;
+    }
+
+    .subimg {
+        margin: 16px;
+        margin-top: 25px;
+        margin-bottom: 9px;
+    }
+
+    .S1 {
+        margin-bottom: 128px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .Sec1 {
+        margin-top: -55px;
+        margin-left: 1rem;
+        max-width: 96.83%;
+    }
+    
+    .Sec1 h1 {
+        margin-bottom: 0.4rem;
+        line-height: 2.7rem;
+        font-size: 35px;
+        letter-spacing: -0.2px;
+        max-width: 98.16%;
+        width: 100%;
+    }
+    
+    .Sec1 p {
+        margin-top: 15.5px;
+        max-width: 95%;
+        width: 100%;
+    }
+
+    .Sec1-login {
+        flex-wrap: wrap;
+    }
+
+    .S1 img {
+        margin: 16px;
+        margin-top: 36px;
+    }
+
+    .S2 {
+        margin-bottom: 2.95rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .Sec-2 {
+        margin-top: -1.6rem;
+        margin-left: 1rem;
+        max-width: 97.8%;
+        width: 100%;
+    }
+    
+    .Sec2 h1 {
+        margin-bottom: 7px;
+        line-height: 2.7rem;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: -0.9px;
+        max-width: 82%;
+        width: 100%;
+    }
+    
+    .Sec2 p {
+        line-height: 1.5rem;
+        font-size: 16.5px;
+        letter-spacing: -0.5px;
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .Sec21 {
+        margin-right: 20px;
+        margin-bottom: -36px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .Sec21img {
+        max-width: 100%;
+        width: 100%;
+        height: 89.2vw;
+    }
+
+    .uberapp {
+        margin-top: 0.85rem;
+        margin-left: 1rem;
+        max-width: 100%;
+    }
+
+    .Uber-app h1 {
+        font-size: 28px;
+        letter-spacing: -1px;
+    }
+    
+    .QRcode1, .QRcode2 {
+        max-width: 96.8%;
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: -7.96px;
+        padding: 0px 23px;
+        padding-right: 15px;
+        padding-bottom: 65px;
+    }
+    
+    .footer1 {
+        margin-top: 2.5rem;
+    }
+    
+    .footer-1 {
+        margin-top: 2.5rem;
+        gap: 2.7rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .ubertech {
+        letter-spacing: -0.2px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer2, .footer21, .footer22 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer2 {
+        margin-bottom: 4rem;
+    }
+
+    .footer21 {
+        margin-bottom: 1.9rem;
+    }
+
+    .column1, .column2, .column3, .column4 {
+        margin-bottom: 1px;
+        max-width: 100%;
+    }
+
+    .footer-3 {
+        margin-bottom: 3.9rem;
+    }
+    
+    .social {
+        max-width: 85%;
+        width: 100%;
+    }
+    
+    .footer-32 p {
+        margin-bottom: 2.8rem;
+    }
+    
+    .terms {
+        margin-bottom: -0.3rem;
+        gap: 0rem;
+        max-width: 59.2%;
+        width: 100%;
+    }
+}
